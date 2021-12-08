@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://www.emfranca.com.br/sitemap.xml

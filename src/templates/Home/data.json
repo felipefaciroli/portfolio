@@ -1,0 +1,32 @@
+{
+  "skils": [
+    {
+      "logo": "/assets/svgs/sass.svg",
+      "name": "Sass"
+    },
+    {
+      "logo": "/assets/svgs/css.svg",
+      "name": "CSS"
+    },
+    {
+      "logo": "/assets/svgs/graphql.svg",
+      "name": "GraphQL"
+    },
+    {
+      "logo": "/assets/svgs/vtex.svg",
+      "name": "VTEX IO / VTEX LEGADO"
+    },
+    {
+      "logo": "/assets/svgs/typescript.svg",
+      "name": "Typescript"
+    },
+    {
+      "logo": "/assets/svgs/reactjs.svg",
+      "name": "React JS"
+    },
+    {
+      "logo": "/assets/svgs/nextjs.svg",
+      "name": "Next JS"
+    }
+  ]
+}
