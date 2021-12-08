@@ -11,14 +11,14 @@ export const Hometop = styled.div`
   ${({ theme }) => css`
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: ${theme.container.size};
-    padding: 10rem 0;
+    padding: 4rem 0;
 
     video{
       display: block;
-      width: 60%;
+      width: 50%;
     }
   `}
 `;
@@ -43,7 +43,7 @@ export const AboutCard = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 400px;
+    width: 35rem;
     background: -webkit-linear-gradient(
 180.06deg,#2c204b -7.44%,#4f0732 99.94%);
     background: linear-gradient(
@@ -53,11 +53,10 @@ export const AboutCard = styled.div`
     margin: 0 0 3rem 0;
 
     .profile{
-      width: 10rem;
+      width: 7rem;
       overflow: hidden;
       border-radius: 100%;
-      border: 6px solid #29292E;
-      margin-right: 3rem;
+      margin: 0 2rem;
       img{
         width: 100%;
       }
@@ -76,7 +75,7 @@ export const AboutCard = styled.div`
         font-size: 1.4rem;
         font-weight: 400;
         color: #FFF;
-        margin: 0 0 2rem 0;
+        margin: 0 0 1rem 0;
       }
       a{
         display: flex;
@@ -85,8 +84,8 @@ export const AboutCard = styled.div`
 
         svg{
           display: block;
-          width: 3rem;
-          margin-right: 1rem;
+          width: 2rem;
+          margin-right: 0.5rem;
         }
 
         span{
@@ -117,7 +116,7 @@ export const Skils = styled.div`
     }
 
     .skils{
-      padding: 0 0 5rem 0;
+      padding: 0 1.5rem 5rem 1.5rem;
 
       .cardSkil{
         display: flex;

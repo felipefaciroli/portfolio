@@ -8,7 +8,7 @@ export const Header = () => {
         <h1>
           <a href="/">
             <span>Felipe Faciroli</span>
-            <em> / Desenvolvedor / Sênior</em>
+            <em> / Programming ...</em>
           </a>
         </h1>
 

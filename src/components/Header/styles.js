@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 
 export const Header = styled.header`
   ${({ theme }) => css`
-    padding: 1.5rem 0;
+    padding: 1.5rem;
   `}
 `;
 
