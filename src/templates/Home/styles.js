@@ -16,9 +16,17 @@ export const Hometop = styled.div`
     width: ${theme.container.size};
     padding: 4rem 0;
 
+    @media ${theme.media.medium} {
+      flex-direction: column;
+    }
+
     video{
       display: block;
       width: 50%;
+
+      @media ${theme.media.medium} {
+        width: 80%;
+      }
     }
   `}
 `;
@@ -29,11 +37,24 @@ export const About = styled.div`
     color: #FFF;
     padding-left: 4rem;
 
+    @media ${theme.media.medium} {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 90%;
+      padding: 3rem 0;
+    }
+
     p{
       display: block;
       margin: 0 0 10px 0;
       line-height: 3rem;
       font-size: 1.6rem;
+
+      @media ${theme.media.medium} {
+        text-align: center;
+      }
     }
   `}
 `;
@@ -57,6 +78,7 @@ export const AboutCard = styled.div`
       overflow: hidden;
       border-radius: 100%;
       margin: 0 2rem;
+
       img{
         width: 100%;
       }
@@ -141,6 +163,10 @@ export const Skils = styled.div`
           font-size: 1.7rem;
           font-weight: 700;
           color: #FFF;
+
+          @media ${theme.media.medium} {
+            font-size: 1.4rem;
+          }
         }
       }
     }
@@ -154,7 +180,7 @@ export const FormContact = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-top: 1rem solid ${theme.colors.secondaryColor};
+    border-top: 0.3rem solid ${theme.colors.secondaryColor};
 
     h3{
       display: block;
@@ -170,6 +196,10 @@ export const FormContact = styled.div`
       flex-direction: column;
       align-items: center;
       width: 50rem;
+
+      @media ${theme.media.medium} {
+        width: 85%;
+      }
 
       button{
         display: block;
@@ -190,3 +220,35 @@ export const FormContact = styled.div`
     }
   `}
 `;
+
+export const Projects = styled.div`
+  ${({ theme }) => css`
+    margin: 3rem 0;
+    padding: 6rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3{
+      display: block;
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #FFF;
+      text-align: center;
+      margin: 0 0 3rem 0;
+    }
+
+    .content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+      .projects-list{
+        width: 90%;
+        padding: 3rem 0;
+      }
+    }
+  `}
+`;
+

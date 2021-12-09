@@ -16,8 +16,9 @@ const Foto = '/assets/images/felipe.jpg';
 
 import { Base } from '../Base';
 import Input from '../../components/Input';
+import { CardProject } from '../../components/CardProject';
 
-import { skils } from './data.json';
+import { skils, projects } from './data.json';
 
 SwiperCore.use([Navigation, Autoplay, A11y, Pagination]);
 
@@ -73,9 +74,9 @@ function Home() {
               </a>
             </div>
           </Styled.AboutCard>
-          <p>Atuo com <strong>Tecnologia</strong> a mais de <strong>12 anos</strong>, tenho uma vasta experiência com programação dentro de grandes empresas.</p>
-          <p>Atualmente trabalho como <strong>Desenvolvedor Especialista VTEX</strong> na <strong>Agência Corebiz</strong>, cuidando especialmente dos projetos de implantação VTEX IO para o <strong>Grupo SOMA (<a href="https://www.bynv.com.br" target="_blank">BYNV</a>)</strong>.</p>
-          <p>Procuro sempre me atualizar as novas tecnologias e melhores práticas de codificação utilizada no mercado de tecnologia, além de ter uma grande experiência com <strong>e-commerce</strong> e <strong>marketing</strong>.</p>
+          <p>No universo da <strong>Tecnologia</strong> a mais de <strong>12 anos</strong> passei por grandes empresas, atualmente minha skil principal de desenvolvimento é o <strong>React JS</strong>.</p>
+          <p>Sou <strong>Desenvolvedor Frontend Especialista em VTEX</strong> na <strong>Agência Corebiz</strong>, cuidando especialmente dos projetos de implantação VTEX IO para o <strong>Grupo SOMA</strong> - <a href="https://www.bynv.com.br" target="_blank">Loja Nati Vozza (NV)</a></p>
+          <p>Procuro sempre me atualizar as novas tecnologias e melhores práticas de codificação utilizadas na atualidade, além de ter uma grande experiência com <strong>E-commerce</strong> e <strong>Marketing</strong>.</p>
         </Styled.About>
         <video muted autoPlay loop poster="">
           <source src={Video} type="video/mp4" />
@@ -108,6 +109,31 @@ function Home() {
           </Swiper>
         )}
       </Styled.Skils>
+
+      <Styled.Projects id="projects">
+        <h3>Projetos</h3>
+
+        <div className="content">
+          <Swiper
+            slidesPerView={width < 1024 ? 1.15 : 3}
+            spaceBetween={15}
+            loop={true}
+            navigation
+            centeredSlides={true}
+            pagination={{ clickable: true }}
+            className="projects-list"
+          >
+            {projects?.map((project, index) => {
+              return (
+                <SwiperSlide key={index}>
+                  <CardProject project={project} />
+                </SwiperSlide>
+              )
+            })}
+
+          </Swiper>
+        </div>
+      </Styled.Projects>
 
       <Styled.FormContact id="contact">
         <h3>Posso te ajudar?</h3>

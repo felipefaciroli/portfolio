@@ -10,6 +10,8 @@ export const theme = {
     secondary: "'Oswald', sans-serif"
   },
   media: {
+    small: '(max-width: 328px)',
+    medium: '(max-width: 1199px)',
     large: '(max-width: 1200px)',
   },
   spacings: {

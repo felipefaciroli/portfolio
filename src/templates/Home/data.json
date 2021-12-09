@@ -14,7 +14,7 @@
     },
     {
       "logo": "/assets/svgs/vtex.svg",
-      "name": "Vtex IO / Vtex Legadoyarn dev"
+      "name": "Vtex"
     },
     {
       "logo": "/assets/svgs/typescript.svg",
@@ -27,6 +27,40 @@
     {
       "logo": "/assets/svgs/nextjs.svg",
       "name": "Next JS"
+    },
+    {
+      "logo": "/assets/svgs/laravel.svg",
+      "name": "Laravel"
+    },
+    {
+      "logo": "/assets/svgs/git.svg",
+      "name": "Git Flow"
+    }
+  ],
+  "projects": [
+    {
+      "link": "https://www.bynv.com.br",
+      "image": "/assets/images/bynv.png",
+      "name": "Nati Vozza (NV)",
+      "repository": "",
+      "public": false,
+      "description": "Uma das primeiras influencers do Brasil, Nati sempre mostrou para o mundo sua visão aguçada para a moda. Loja utiliza a Tecnologia VTEX IO"
+    },
+    {
+      "link": "https://www.karsten.com.br",
+      "image": "/assets/images/karsten.png",
+      "name": "Karsten / Trussardi",
+      "repository": "",
+      "public": false,
+      "description": "Sexta empresa mais longeva do Brasil, referência em proporcionar beleza, conforto, qualidade superior e inovação em Cama, Mesa, Banho e Decoração. Loja utiliza a Tecnologia VTEX Legado"
+    },
+    {
+      "link": "https://www.shoulder.com.br",
+      "image": "/assets/images/shoulder.png",
+      "name": "Shoulder",
+      "repository": "",
+      "public": true,
+      "description": "Mais de 60 lojas espalhadas pelo Brasil, mais de 1.000 colaboradores apaixonados por moda. Loja utiliza a Tecnologia VTEX IO"
     }
   ]
 }
