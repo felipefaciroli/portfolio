@@ -33,11 +33,11 @@ export default class MyDocument extends Document {
     return (
       <Html lang="pt-BR">
         <Head>
-          {config.codeAnalytics && (
+          {process.env.GOOGLE_ANALYTICS_UA && (
             <>
               <script
                 async
-                src={`https://www.googletagmanager.com/gtag/js?id=${config.codeAnalytics}`}
+                src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_UA}`}
               ></script>
 
               <script
@@ -48,7 +48,7 @@ export default class MyDocument extends Document {
                 dataLayer.push(arguments)
               }
               gtag('js', new Date())
-              gtag('config', '${config.codeAnalytics}')
+              gtag('config', '${process.env.GOOGLE_ANALYTICS_UA}')
             `,
                 }}
               />
