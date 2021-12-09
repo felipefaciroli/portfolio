@@ -109,7 +109,7 @@ function Home() {
         )}
       </Styled.Skils>
 
-      <Styled.FormContact id="skils">
+      <Styled.FormContact id="contact">
         <h3>Posso te ajudar?</h3>
         <Form ref={formRef} onSubmit={handleSubmit}>
           <Input name='name' label='Seu nome' required={true} />

@@ -29,7 +29,7 @@ export const Header = () => {
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#contact">
               Contato
             </a>
           </li>
