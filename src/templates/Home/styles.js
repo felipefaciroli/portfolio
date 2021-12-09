@@ -146,3 +146,47 @@ export const Skils = styled.div`
     }
   `}
 `;
+
+export const FormContact = styled.div`
+  ${({ theme }) => css`
+    margin: 3rem 0;
+    padding: 6rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1rem solid ${theme.colors.secondaryColor};
+
+    h3{
+      display: block;
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #FFF;
+      text-align: center;
+      margin: 0 0 3rem 0;
+    }
+
+    form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50rem;
+
+      button{
+        display: block;
+        width: 20rem;
+        height: 50px;
+        background: ${theme.colors.secondaryColor};
+        color: #FFF;
+        border: 0;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        margin-top: 2rem;
+        transition: all ease-in-out 300ms;
+
+        &:hover{
+          background: ${theme.colors.secondaryColorHover};
+        }
+      }
+    }
+  `}
+`;

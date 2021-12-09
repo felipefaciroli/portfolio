@@ -1,6 +1,7 @@
 import { ThemeProvider } from 'styled-components';
 import { theme } from '../styles/theme';
 import { AppProps } from 'next/app';
+import { SnackbarProvider } from 'notistack';
 
 import { GlobalStyles } from '../styles/global-styles';
 import '../styles/main.css';
@@ -11,10 +12,12 @@ import '../styles/swipper.scss';
 
 const MyApp = ({ Component, pageProps }) => {
   return (
-    <ThemeProvider theme={theme}>
-      <Component {...pageProps} />
-      <GlobalStyles />
-    </ThemeProvider>
+    <SnackbarProvider maxSnack={3}>
+      <ThemeProvider theme={theme}>
+        <Component {...pageProps} />
+        <GlobalStyles />
+      </ThemeProvider>
+    </SnackbarProvider>
   );
 }
 
