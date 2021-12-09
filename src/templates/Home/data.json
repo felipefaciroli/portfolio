@@ -59,7 +59,7 @@
       "image": "/assets/images/shoulder.png",
       "name": "Shoulder",
       "repository": "",
-      "public": true,
+      "public": false,
       "description": "Mais de 60 lojas espalhadas pelo Brasil, mais de 1.000 colaboradores apaixonados por moda. Loja utiliza a Tecnologia VTEX IO"
     }
   ]
